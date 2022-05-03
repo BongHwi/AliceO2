@@ -1,5 +1,9 @@
-# Changes since 2022-04-14
+# Changes since 2022-04-19
 
+## Changes in Algorithm
+
+- [#8666](https://github.com/AliceO2Group/AliceO2/pull/8666) 2022-05-01: Fixing compilation warnings in DataFormat/Headers by [@matthiasrichter](https://github.com/matthiasrichter)
+- [#8686](https://github.com/AliceO2Group/AliceO2/pull/8686) 2022-05-02: Misc fixes3 by [@ktf](https://github.com/ktf)
 ## Changes in Analysis
 
 - [#8588](https://github.com/AliceO2Group/AliceO2/pull/8588) 2022-04-21: DPL Analysis: workaround for setting self-index binding before invoking process() by [@aalkin](https://github.com/aalkin)
@@ -8,8 +12,6 @@
 - [#8574](https://github.com/AliceO2Group/AliceO2/pull/8574) 2022-04-28: Add energy as a dynamic column by [@njacazio](https://github.com/njacazio)
 ## Changes in Common
 
-- [#8575](https://github.com/AliceO2Group/AliceO2/pull/8575) 2022-04-14: Missing const declarations on bitset comparisons. by [@pnwkw](https://github.com/pnwkw)
-- [#8590](https://github.com/AliceO2Group/AliceO2/pull/8590) 2022-04-17: Move alignment objects to DET/Calib/Align by [@shahor02](https://github.com/shahor02)
 - [#8623](https://github.com/AliceO2Group/AliceO2/pull/8623) 2022-04-21: DPL: add dpl_instance tag to distinguish between different NUMA domains by [@ktf](https://github.com/ktf)
 - [#8618](https://github.com/AliceO2Group/AliceO2/pull/8618) 2022-04-21: Store original tfCounter in the CTFHeader by [@shahor02](https://github.com/shahor02)
 - [#8573](https://github.com/AliceO2Group/AliceO2/pull/8573) 2022-04-25: :MCH: introduce digit time errors in raw decoder by [@aferrero2707](https://github.com/aferrero2707)
@@ -17,11 +19,11 @@
 - [#8639](https://github.com/AliceO2Group/AliceO2/pull/8639) 2022-04-26: Use tfCounter in time-slot calib, provide real time. by [@shahor02](https://github.com/shahor02)
 - [#8667](https://github.com/AliceO2Group/AliceO2/pull/8667) 2022-04-27: Add/use createDirectoriesIfAbsent method, robust against concurrent calls by [@shahor02](https://github.com/shahor02)
 - [#8659](https://github.com/AliceO2Group/AliceO2/pull/8659) 2022-04-27: Printing log when we find a default CCDB entry by [@chiarazampolli](https://github.com/chiarazampolli)
+- [#8680](https://github.com/AliceO2Group/AliceO2/pull/8680) 2022-04-29: DPL: misc changes propaedeutic for rate limiting by [@ktf](https://github.com/ktf)
+- [#8687](https://github.com/AliceO2Group/AliceO2/pull/8687) 2022-04-30: Fetch CTF dicts from CCDB or local file + related changes by [@shahor02](https://github.com/shahor02)
+- [#8686](https://github.com/AliceO2Group/AliceO2/pull/8686) 2022-05-02: Misc fixes3 by [@ktf](https://github.com/ktf)
 ## Changes in DataFormats
 
-- [#8578](https://github.com/AliceO2Group/AliceO2/pull/8578) 2022-04-14: Add theta calculation to Fwd track by [@pnwkw](https://github.com/pnwkw)
-- [#8596](https://github.com/AliceO2Group/AliceO2/pull/8596) 2022-04-17: Work on TPC ZS Encoding by [@davidrohr](https://github.com/davidrohr)
-- [#8605](https://github.com/AliceO2Group/AliceO2/pull/8605) 2022-04-18: Implement improved link-based ZS by [@davidrohr](https://github.com/davidrohr)
 - [#8612](https://github.com/AliceO2Group/AliceO2/pull/8612) 2022-04-19: Fixes for MID decoding and data access by [@shahor02](https://github.com/shahor02)
 - [#8618](https://github.com/AliceO2Group/AliceO2/pull/8618) 2022-04-21: Store original tfCounter in the CTFHeader by [@shahor02](https://github.com/shahor02)
 - [#8622](https://github.com/AliceO2Group/AliceO2/pull/8622) 2022-04-21: [FIT] Quick fix - increment FT0 and FDD Digit version by [@mslupeck](https://github.com/mslupeck)
@@ -29,19 +31,12 @@
 - [#8643](https://github.com/AliceO2Group/AliceO2/pull/8643) 2022-04-25: Optionally impose DH.tfCounter from local counter by [@shahor02](https://github.com/shahor02)
 - [#8642](https://github.com/AliceO2Group/AliceO2/pull/8642) 2022-04-25: Provide MCH clusters via global-track-cluster-reader and RecoContainer by [@shahor02](https://github.com/shahor02)
 - [#8651](https://github.com/AliceO2Group/AliceO2/pull/8651) 2022-04-27: [QC-751] Remove obsolete QC flags by [@knopers8](https://github.com/knopers8)
+- [#8673](https://github.com/AliceO2Group/AliceO2/pull/8673) 2022-04-29: TRD bug fix for mac m1 by [@bazinski](https://github.com/bazinski)
+- [#8687](https://github.com/AliceO2Group/AliceO2/pull/8687) 2022-04-30: Fetch CTF dicts from CCDB or local file + related changes by [@shahor02](https://github.com/shahor02)
+- [#8666](https://github.com/AliceO2Group/AliceO2/pull/8666) 2022-05-01: Fixing compilation warnings in DataFormat/Headers by [@matthiasrichter](https://github.com/matthiasrichter)
+- [#8648](https://github.com/AliceO2Group/AliceO2/pull/8648) 2022-05-02: TRD fix tracklethcheader 1 option, should not be used. by [@bazinski](https://github.com/bazinski)
 ## Changes in Detectors
 
-- [#8584](https://github.com/AliceO2Group/AliceO2/pull/8584) 2022-04-14: ITS: remove unused variables to fix warnings by [@mconcas](https://github.com/mconcas)
-- [#8579](https://github.com/AliceO2Group/AliceO2/pull/8579) 2022-04-14: Reporting and protection for interleaved chip data error by [@shahor02](https://github.com/shahor02)
-- [#8577](https://github.com/AliceO2Group/AliceO2/pull/8577) 2022-04-14: TPC: reduce use of static keyword by [@sawenzel](https://github.com/sawenzel)
-- [#8593](https://github.com/AliceO2Group/AliceO2/pull/8593) 2022-04-15: DPL: Catch exception from stol when parsing invalid run number by [@davidrohr](https://github.com/davidrohr)
-- [#8594](https://github.com/AliceO2Group/AliceO2/pull/8594) 2022-04-15: Fix for not throwing exception in cpv::RawReaderMemory when processin… by [@sevdokim](https://github.com/sevdokim)
-- [#8586](https://github.com/AliceO2Group/AliceO2/pull/8586) 2022-04-15: Multiple fixes in Alpide decoding/error handling by [@shahor02](https://github.com/shahor02)
-- [#8599](https://github.com/AliceO2Group/AliceO2/pull/8599) 2022-04-16: Use flag HBFUtils.obligatorySOR to start raw data from TF with SOX + fixes by [@shahor02](https://github.com/shahor02)
-- [#8601](https://github.com/AliceO2Group/AliceO2/pull/8601) 2022-04-17: Apply TF ordering policy to all writers by [@shahor02](https://github.com/shahor02)
-- [#8596](https://github.com/AliceO2Group/AliceO2/pull/8596) 2022-04-17: Work on TPC ZS Encoding by [@davidrohr](https://github.com/davidrohr)
-- [#8604](https://github.com/AliceO2Group/AliceO2/pull/8604) 2022-04-18: Fix misleading variable names by [@davidrohr](https://github.com/davidrohr)
-- [#8605](https://github.com/AliceO2Group/AliceO2/pull/8605) 2022-04-18: Implement improved link-based ZS by [@davidrohr](https://github.com/davidrohr)
 - [#8587](https://github.com/AliceO2Group/AliceO2/pull/8587) 2022-04-19: Add multiple output function in calibration workflow of MFT by [@syano0822](https://github.com/syano0822)
 - [#8612](https://github.com/AliceO2Group/AliceO2/pull/8612) 2022-04-19: Fixes for MID decoding and data access by [@shahor02](https://github.com/shahor02)
 - [#8614](https://github.com/AliceO2Group/AliceO2/pull/8614) 2022-04-19: Reduce default max memory to 12GB by [@mpuccio](https://github.com/mpuccio)
@@ -74,12 +69,25 @@
 - [#8658](https://github.com/AliceO2Group/AliceO2/pull/8658) 2022-04-27: MCH: speedup finding of used cluster combinations by [@pillot](https://github.com/pillot)
 - [#8664](https://github.com/AliceO2Group/AliceO2/pull/8664) 2022-04-27: MRRTF-154: MCH raw data decoder now catches exceptions by [@aphecetche](https://github.com/aphecetche)
 - [#8650](https://github.com/AliceO2Group/AliceO2/pull/8650) 2022-04-27: [OCTRL-564] Filling RCT information when uploading GRP at end of run by [@chiarazampolli](https://github.com/chiarazampolli)
+- [#8661](https://github.com/AliceO2Group/AliceO2/pull/8661) 2022-04-28: Gain map using tracks: Loading topology correction from CCDB by [@matthias-kleiner](https://github.com/matthias-kleiner)
+- [#8638](https://github.com/AliceO2Group/AliceO2/pull/8638) 2022-04-28: IDCs: Using factorised IDC1 for FFT by [@matthias-kleiner](https://github.com/matthias-kleiner)
+- [#8636](https://github.com/AliceO2Group/AliceO2/pull/8636) 2022-04-29: Fix the bug in MFTDCSConfigProcessorSpec.h and add new paramer name i… by [@syano0822](https://github.com/syano0822)
+- [#8673](https://github.com/AliceO2Group/AliceO2/pull/8673) 2022-04-29: TRD bug fix for mac m1 by [@bazinski](https://github.com/bazinski)
+- [#8687](https://github.com/AliceO2Group/AliceO2/pull/8687) 2022-04-30: Fetch CTF dicts from CCDB or local file + related changes by [@shahor02](https://github.com/shahor02)
+- [#8691](https://github.com/AliceO2Group/AliceO2/pull/8691) 2022-05-01: CPV: fix channel mapping by [@sevdokim](https://github.com/sevdokim)
+- [#8683](https://github.com/AliceO2Group/AliceO2/pull/8683) 2022-05-01: Fixes in MeanVertex and TPCVDriftTgL calib by [@chiarazampolli](https://github.com/chiarazampolli)
+- [#8697](https://github.com/AliceO2Group/AliceO2/pull/8697) 2022-05-02: Extra changes for using CTF dictionaries from CCDB by [@shahor02](https://github.com/shahor02)
+- [#8648](https://github.com/AliceO2Group/AliceO2/pull/8648) 2022-05-02: TRD fix tracklethcheader 1 option, should not be used. by [@bazinski](https://github.com/bazinski)
+- [#8698](https://github.com/AliceO2Group/AliceO2/pull/8698) 2022-05-02: Use common ChannelCalibrator::INFINITE_TF definition by [@shahor02](https://github.com/shahor02)
+- [#8702](https://github.com/AliceO2Group/AliceO2/pull/8702) 2022-05-03: [EMCAL-548] Reduce verbosity in digits to cell converter by [@mfasDa](https://github.com/mfasDa)
 ## Changes in EventVisualisation
 
 - [#8625](https://github.com/AliceO2Group/AliceO2/pull/8625) 2022-04-21: Option to not write json files in the ED workflow that are empty by [@pnwkw](https://github.com/pnwkw)
 - [#8580](https://github.com/AliceO2Group/AliceO2/pull/8580) 2022-04-23: Implemented reading MFT tracks from AOD files by [@pnwkw](https://github.com/pnwkw)
 - [#8654](https://github.com/AliceO2Group/AliceO2/pull/8654) 2022-04-26: Event Display: compile on macOS by [@ktf](https://github.com/ktf)
 - [#8667](https://github.com/AliceO2Group/AliceO2/pull/8667) 2022-04-27: Add/use createDirectoriesIfAbsent method, robust against concurrent calls by [@shahor02](https://github.com/shahor02)
+- [#8681](https://github.com/AliceO2Group/AliceO2/pull/8681) 2022-05-01: Event Display: Load all geometry by default, clean up the tree list view by [@pnwkw](https://github.com/pnwkw)
+- [#8663](https://github.com/AliceO2Group/AliceO2/pull/8663) 2022-05-02: Event Display: Add filter to only visualize tracks matching ITS readout frames & standardize workflow options by [@pnwkw](https://github.com/pnwkw)
 ## Changes in Framework
 
 - [#8620](https://github.com/AliceO2Group/AliceO2/pull/8620) 2022-04-20: DPL: work with ROOT master by [@ktf](https://github.com/ktf)
@@ -94,10 +102,18 @@
 - [#8649](https://github.com/AliceO2Group/AliceO2/pull/8649) 2022-04-25: DPL: do not send the oldest possible timeframe to out of band channels by [@ktf](https://github.com/ktf)
 - [#8659](https://github.com/AliceO2Group/AliceO2/pull/8659) 2022-04-27: Printing log when we find a default CCDB entry by [@chiarazampolli](https://github.com/chiarazampolli)
 - [#8574](https://github.com/AliceO2Group/AliceO2/pull/8574) 2022-04-28: Add energy as a dynamic column by [@njacazio](https://github.com/njacazio)
+- [#8677](https://github.com/AliceO2Group/AliceO2/pull/8677) 2022-04-29: DPL DataSpecUtils: adding helper to create optional ConcreteDataMatcher by [@matthiasrichter](https://github.com/matthiasrichter)
+- [#8678](https://github.com/AliceO2Group/AliceO2/pull/8678) 2022-04-29: DPL: avoid issues with some fmt / GCC combination by [@ktf](https://github.com/ktf)
+- [#8680](https://github.com/AliceO2Group/AliceO2/pull/8680) 2022-04-29: DPL: misc changes propaedeutic for rate limiting by [@ktf](https://github.com/ktf)
+- [#8652](https://github.com/AliceO2Group/AliceO2/pull/8652) 2022-04-29: DPL: refactoring of WorkflowSerializationHelpers by [@matthiasrichter](https://github.com/matthiasrichter)
+- [#8676](https://github.com/AliceO2Group/AliceO2/pull/8676) 2022-04-29: No reason to forbid outputing both mermaid and o2-control at the same… by [@Barthelemy](https://github.com/Barthelemy)
+- [#8687](https://github.com/AliceO2Group/AliceO2/pull/8687) 2022-04-30: Fetch CTF dicts from CCDB or local file + related changes by [@shahor02](https://github.com/shahor02)
+- [#8683](https://github.com/AliceO2Group/AliceO2/pull/8683) 2022-05-01: Fixes in MeanVertex and TPCVDriftTgL calib by [@chiarazampolli](https://github.com/chiarazampolli)
+- [#8684](https://github.com/AliceO2Group/AliceO2/pull/8684) 2022-05-02: DPL Analysis: fix to permit writing a table with a single VLA column by [@aalkin](https://github.com/aalkin)
+- [#8686](https://github.com/AliceO2Group/AliceO2/pull/8686) 2022-05-02: Misc fixes3 by [@ktf](https://github.com/ktf)
 ## Changes in Steer
 
-- [#8599](https://github.com/AliceO2Group/AliceO2/pull/8599) 2022-04-16: Use flag HBFUtils.obligatorySOR to start raw data from TF with SOX + fixes by [@shahor02](https://github.com/shahor02)
+- [#8655](https://github.com/AliceO2Group/AliceO2/pull/8655) 2022-05-02: primary kinematic initialisation for MaterialBudgetMap moved to Stepping by [@amorsch](https://github.com/amorsch)
 ## Changes in Utilities
 
-- [#8589](https://github.com/AliceO2Group/AliceO2/pull/8589) 2022-04-14: Fix EPN stderr monitor by [@davidrohr](https://github.com/davidrohr)
 - [#8660](https://github.com/AliceO2Group/AliceO2/pull/8660) 2022-04-28: [QC-769] Desambiguify DS and Merger names  by [@Barthelemy](https://github.com/Barthelemy)
